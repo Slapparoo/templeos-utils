@@ -1,0 +1,5 @@
+#!/bin/sh
+
+./q-umount
+
+qemu-system-x86_64 -display gtk -hda ~/tos_disk.qcow2 -machine kernel_irqchip=off -smp cores=3  -m 2048 -rtc base=localtime 

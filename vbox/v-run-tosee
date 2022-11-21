@@ -1,0 +1,3 @@
+./v-umount
+
+VBoxManage startvm "TempOS"

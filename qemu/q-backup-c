@@ -1,0 +1,10 @@
+# local backup copy of c drive
+
+sudo modprobe nbd max_part=16
+sudo qemu-nbd -c /dev/nbd0 ~/tos_disk.qcow2
+sudo partprobe /dev/nbd0
+echo backup /dev/nbd0p1 to bak/c.`date --iso-8601=hours`.img.gz
+mkdir -p bak
+sudo dd if=/dev/nbd0p1 bs=1M | gzip > bak/c.`date --iso-8601=hours`.img.gz
+# disconnect drive again
+sudo qemu-nbd -d /dev/nbd0

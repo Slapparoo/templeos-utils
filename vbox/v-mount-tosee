@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+echo VDI Mnt ~//VirtualBox\ VMs/TempOS/TempOS.vdi, /dev/nbd0p1 /mnt/vtosee_diskc, /dev/nbd0p2 /mnt/vtosee_diskd
+sudo modprobe nbd max_part=16
+sudo qemu-nbd -c /dev/nbd0 ~//VirtualBox\ VMs/TempOS/TempOS.vdi
+sudo partprobe /dev/nbd0
+sudo mkdir -p /mnt/vtosee_diskd
+sudo mkdir -p /mnt/vtosee_diskc
+sudo mount --rw /dev/nbd0p2 /mnt/vtosee_diskd
+sudo mount --rw /dev/nbd0p1 /mnt/vtosee_diskc
+

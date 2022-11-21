@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Mount QEMU drive.
+
+echo EMU unmount
+sudo umount /mnt/vtosee_diskd
+sudo umount /mnt/vtosee_diskc
+sudo qemu-nbd -d /dev/nbd0
+

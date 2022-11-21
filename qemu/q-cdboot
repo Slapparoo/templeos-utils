@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Start QEMU and boot Dropbox CDROM in order to install new TempleOS files.
+./q-umount
+
+qemu-system-x86_64 -hda ~/tos_disk.qcow2 -machine kernel_irqchip=off -smp cores=2 -m 2048 -rtc base=localtime -soundhw pcspk -cdrom ../TempleOSEE6.03.iso -boot d
