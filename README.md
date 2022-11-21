@@ -28,4 +28,8 @@ After probing and before mounting you can reformat a partition with<br/>
 (be careful, make sure you have the correct /dev/<name> as things can go wrong if you don't) /dev/nbd0p2 is the d drive<br/>
 `sudo mkfs -t vfat /dev/nbd0p2`
 
+These are companion utilities for TempleOS and should be usable far any flavour
+
+See the main [TempleOS-EE main project](https://slapparoo.github.io/TempleOS-EE/)
+
 
