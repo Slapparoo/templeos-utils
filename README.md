@@ -30,6 +30,17 @@ After probing and before mounting you can reformat a partition with<br/>
 
 #### Contributions are welcome either do a pull request or an issue ticket.<br/>
 
+### Other useful utilities
+[TinkerOS USB Boot](https://github.com/tinkeros/TinkerOS/tree/main/USBBoot#readme)<br/>
+[redseafs](https://github.com/ylluminarious/redseafs)<br/>
+[TempleOS programs in Linux user-space, part 1](https://minexew.github.io/2020/02/27/templeos-loader-part1.html)<br/>
+[TempleOS programs in Linux user-space, part 2](https://minexew.github.io/2020/03/29/templeos-loader-part2.html)<br/>
+[TempleOS programs in Linux user-space, part 3](https://minexew.github.io/2020/05/10/templeos-loader-part3.html)<br/>
+[HolyC-for-Linux](https://github.com/jamesalbert/HolyC-for-Linux)
+
+
+
+
 These are companion utilities for TempleOS and should be usable far any flavour
 
 See the main [TempleOS-EE main project](https://slapparoo.github.io/TempleOS-EE/)
